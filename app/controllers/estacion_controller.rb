@@ -4,6 +4,6 @@ Investigador::App.controllers :estacion_controller do
     end
   
     get :listar, :map => '/estacion/listar' do
-        'estacion_listar =)'
+        Usuario.all.to_json
     end
 end
